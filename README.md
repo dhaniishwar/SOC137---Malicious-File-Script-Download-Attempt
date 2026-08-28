@@ -157,7 +157,6 @@
 
 <br>
 <br>
-&nbsp;&nbsp;&nbsp;&nbsp;  
-
-
-
+&nbsp;&nbsp;&nbsp;&nbsp;  This alert involved a macro-enabled word document named "INVOICE PACKAGE LINK TO DOWNLOAD.docm", which was sent to the endpoint NicolasPRD and has its Device Action recorded as Blocked. Third-party analysis confirmed the file was genuinely malicious: VirusTotal flagged it 40/65 and AnyRUN Sandboxing showed it function as a loaded that reaches out to filetranfer.io to fetch a second payload. A targeted search of Log Management for this file's actual C2 address found no matching traffic from the host and Endpoint security confirmed the file was Quarantined, meaning the attack was intercepted before it could execute. Separately, unrelated suspicious activity was also observed on the same host - rundll32 launching a DLL from Temp, obfuscated PowerShell and traffic to unfamiliar domains. But since none of it tried back to this specific file's execution chain, it was flagged for its own escalation rather than folded into this case. Based on all of this, the playbook was closed as "True Positive".
+<br>
+<br>
